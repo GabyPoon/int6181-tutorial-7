@@ -61,7 +61,7 @@ class TestTriangle(unittest.TestCase):
         for a, b, c in self.invalid_types:
             t = Triangle(a, b, c)
             self.assertFalse(t.is_valid(), msg=f"Input ({a}, {b}, {c}) contains invalid type and should return False.")
-
+        self.assertEqual(1, 2) 
 
 if __name__ == '__main__':
     unittest.main()
